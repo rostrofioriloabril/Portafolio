@@ -1,0 +1,73 @@
+
+.habilidades{
+    display: flex;
+    box-sizing: border-box;
+    height: 450px;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-top: 3rem;
+}
+.skills {
+    height: auto;
+    padding-top: 20px;
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+}
+.skills h1, .hobbies h1{
+    width: 100%;
+    color: #fff;
+}
+.skills div {
+    display: flex;
+    align-items: center;
+    background-color: rgb(4, 4, 31);
+    width: 25%;
+    padding: 0.5rem 0rem;
+    border-radius: 10%;
+    color: #fff;
+    justify-content: center;
+}
+
+
+.hobbies{
+    display: flex;
+    padding-top: 20px;
+    width: 40%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+.hobbies i { 
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+
+}
+.hobbies div {
+    margin-right: 1em;
+    background-color: brown;
+    width: 25%;
+    height: 30%;
+    border-radius: 10%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+.musica:hover{
+    animation: music .2s alternate infinite ; 
+}
+.video:hover{
+    transform: scale(1.2,1.2);
+}
+.cocina:hover{
+    transform: rotate(200deg);
+}

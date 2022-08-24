@@ -1,0 +1,220 @@
+.containerFondoC{
+    padding-top: 100px;
+    width: 100%;
+    height: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    overflow: hidden;
+
+}
+
+.containerFondoC .textoContacto{
+    margin-top: 4rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 99;
+    margin-bottom: 7rem;
+}
+.textoContacto h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+
+
+
+.loader{
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+.loader span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(36deg * var(--1)));
+}
+.loader span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background: transparent;
+    border: 3px solid #00efff;
+    box-sizing: border-box;
+    box-shadow: 
+              -200px -200px 0 #00efff,
+              -200px -200px 20px #00efff,
+               200px 200px 0px #00efff,
+               200px 200px 20px #00efff,
+               -200px 200px 0 #00efff,
+               -200px 200px 20px #00efff,
+               200px -200px 0 #00efff,
+               200px -200px 20px #00efff;
+    transform-origin: 200px;
+    animation: animate 5s linear infinite;
+    animation-delay: calc(-0.25s * var(--1));
+    
+    transition: 2s;
+}
+
+
+
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+
+form{
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .inputBox {
+    position: relative;
+    width: 100%;
+ }
+ .inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255,255 , 0.25);
+    background: transparent;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 1em;
+    transition: 0.5s;
+ }
+ .inputBox span {
+     position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+ }
+ 
+
+ .inputBox input:focus ~ span{
+    color: #fff;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background:  #000000;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    letter-spacing: 0.2em;
+ }
+ .inputBox:first-child input:focus{
+    border: 1px solid #00dfc4;
+ }
+ .inputBox:nth-child(2) input:focus ~ span {
+    background: #000;
+    color: #fff;
+    border-left: 1px solid #df005d;
+    border-right: 1px solid #df005d;
+    border-radius: 2px;
+}
+.inputBox:nth-child(2) input:focus{
+   border: 1px solid #df005d;
+}
+ .inputBox:nth-child(3) input:focus ~ span {
+    background: #000;
+    color: #fff;
+    border-left: 1px solid #5600df;
+    border-right: 1px solid #5600df;
+    border-radius: 2px;
+ }
+ 
+ .inputBox:nth-child(3) input:focus{
+    border: 1px solid #5600df;
+ }
+ .inputBox:nth-child(4) input:focus{
+    border: 1px solid #1bcbf7;
+ }
+ .inputBox:nth-child(4) input:focus ~ span {
+    background: #000;
+    color: #fff;
+    border-left: 1px solid #1bcbf7;
+    border-right: 1px solid #1bcbf7;
+    border-radius: 2px;
+}
+
+ .box{
+    position: relative;
+    width: 100px;
+    height: 30px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    margin-top: 0.5rem;
+ }
+ .box::after{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: transparent;
+    border-radius: 2px;
+ }
+ .box::before{
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(#00ccff, #d400d4);
+    animation: boton 1s linear infinite;
+ }
+ .box button{
+    position: absolute;
+    font-size: 1em;
+    z-index: 98;
+    background: transparent;
+    border: none;
+    color: #fff ;
+    cursor: pointer;
+    padding-bottom: 23px;
+    text-shadow: 2px 0px 10px #000;
+    
+ }
+.box:hover{
+   transform: scale(1.2,1.2);
+}
+
+
+footer{
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    margin-top: 3em;
+    text-align: center;
+}/*
+@media only screen and (max-width:400px){
+  
+}*/
