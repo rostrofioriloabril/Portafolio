@@ -1,119 +1,126 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- }
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
 form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    column-gap: 30px;
- }
- .inputBox {
-    position: relative;
-    width: 250px;
- }
- .inputBox input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid rgba(255, 255,255 , 0.25);
-    background: #1d2b3a;
-    border-radius: 5px;
-    outline: none;
-    color: #fff;
-    margin-bottom: 30px;
-    font-size: 1em;
-    transition: 0.5s;
- }
- .inputBox span {
-    position: absolute;
-    left: 0;
-    padding: 10px;
-    pointer-events: none;
-    font-size: 1em;
-    color: rgba(255, 255, 255, 0.25);
-    text-transform: uppercase;
-    transition: 0.5s;
- }
- 
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   column-gap: 10px;
+}
+.inputBox {
+   position: relative;
+   width: 250px;
+}
+.inputBox input, textarea {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid rgba(255, 255,255 , 0.25);
+   background: #1d2b3a;
+   border-radius: 5px;
+   outline: none;
+   color: #fff;
+   margin-bottom: 10px;
+   font-size: 1em;
+   transition: 0.5s;
+}
+.inputBox span {
+   position: absolute;
+   left: 0;
+   padding: 10px;
+   pointer-events: none;
+   font-size: 1em;
+   color: rgba(255, 255, 255, 0.25);
+   text-transform: uppercase;
+   transition: 0.5s;
+}
 
- .inputBox input:focus ~ span{
-    color: #00dfc4;
-    transform: translateX(10px) translateY(-7px);
-    font-size: 0.65em;
-    padding: 0 10px;
-    background:  #1d2b3a;
-    border-left: 1px solid #00dfc4;
-    border-right: 1px solid #00dfc4;
-    letter-spacing: 0.2em;
- }
- .inputBox:nth-child(2) input:focus ~ span {
-    background: #00dfc4;
-    color: #1d2b3a;
-    border-radius: 2px;
- }
- .inputBox input:focus{
-    border: 1px solid #00dfc4;
- }
-
-
-
-
-
-
-
-
-
-
+.inputBox textarea:focus ~ span{
+   color: #ffffff;
+   transform: translateX(10px) translateY(-7px);
+   font-size: 0.65em;
+   padding: 0 10px;
+   background:  #000;
+   border-left: 1px solid #dfd400;
+   border-right: 1px solid #dfd400;
+   letter-spacing: 0.2em;
+}
+.inputBox input:focus ~ span{
+   color: #ffffff;
+   transform: translateX(10px) translateY(-7px);
+   font-size: 0.65em;
+   padding: 0 10px;
+   background:  #000;
+   border-left: 1px solid #00dfc4;
+   border-right: 1px solid #00dfc4;
+   letter-spacing: 0.2em;
+}
+.inputBox:nth-child(2) input:focus ~ span, textarea:focus {
+   background: #000;
+   color: #fff;
+   border-radius: 2px;
+}
+.inputBox input:focus{
+   border: 1px solid #00dfc4;
+}
 
 
 
 
- .box{
-    position: relative;
-    width: 100px;
-    height: 30px;
-    border-radius: 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.5);
-    overflow: hidden;
 
- }
- .box::after{
-    content: '';
-    position: absolute;
-    inset: 4px;
-    background: #1d2b3a;
-    border-radius: 2px;
- }
- .box::before{
-    content: '';
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    background: linear-gradient(#00ccff, #d400d4);
-    animation: boton 1s linear infinite;
- }
- .box button{
-    position: absolute;
-    font-size: 1em;
-    z-index: 98;
-    background: transparent;
-    border: none;
-    color: #fff ;
-    cursor: pointer;
- }
 
- @keyframes boton {
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
- }
- 
+
+
+
+
+
+
+
+
+.box{
+   position: relative;
+   width: 100px;
+   height: 30px;
+   border-radius: 2px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: rgba(0, 0, 0, 0.5);
+   overflow: hidden;
+   margin: 0;
+}
+.box::after{
+   content: '';
+   position: absolute;
+   inset: 4px;
+   background: #1d2b3a;
+   border-radius: 2px;
+}
+.box::before{
+   content: '';
+   position: absolute;
+   width: 150px;
+   height: 150px;
+   background: linear-gradient(#00ccff, #d400d4);
+   animation: boton 1s linear infinite;
+}
+.box input[type="submit"]{
+   position: absolute;
+   font-size: 1em;
+   z-index: 98;
+   background: none;
+   color: #fff ;
+   cursor: pointer;
+   border: none;
+}
+
+@keyframes boton {
+   0%{
+      transform: rotate(0deg);
+   }
+   100%{
+      transform: rotate(360deg);
+   }
+}

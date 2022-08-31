@@ -11,7 +11,10 @@
     <link href="fondo.css" rel="stylesheet">
     <link href="proyectos.css" rel="stylesheet">
     <link href="footer.css" rel="stylesheet">
+    <link href="form.css" rel="stylesheet">
     <link rel="stylesheet" href="animaciones.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>Portafolio</title>
 </head>
 
@@ -239,28 +242,40 @@
         </div>
         <div class="formacion" id="formacion">
             <h2>Formacion académica</h2>
-            <div class="unoFormacion">
-                <img src="imagenes/one.png" alt="">
-                <h3>Desarrollo como Programador Front-end</h3>
-                <p>2022(en curso)<br>One Next Education</p>
-            </div>
-            <div class="dosFormacion">
-                <img src="imagenes/argentina.png" alt="">
-                <h3>Etapa #SeProgramar</h3>
-                <p>2022<br>Argentina Programa</p>
-            </div>
-            <div class="tresFormacion">
-                <img src="imagenes/egg.png" alt="">
-                <h3>Programación desde Cero: Introduccion a la lógica de la programación</h3>
-                <p>2022<br>Egg Educación</p>
-            </div>
-            <div class="cuatroFormacion">
-                <img src="imagenes/itba.png" alt="">
-                <h3>Programa Full Stack Developer - ITBA</h3>
-                <p>2022(en curso)<br>Instituto Tecnológico de Buenos Aires</p>
+            <div class="timeline">
+                <ul>
+                    <li>
+                        <div class="content">
+                            <h3>Desarrollo como Programador Front-end</h3>
+                            <p>One Next Education</p>
+                        </div>
+                        <h4><i class="uil uil-calendar-alt"></i> 2022(en curso)</h4>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <h3>Etapa #SeProgramar</h3>
+                            <p>Argentina Programa</p>
+                        </div>
+                            <h4><i class="uil uil-calendar-alt"></i> 08/2022</h4>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <h3>Programación desde Cero: Introduccion a la lógica de la programación</h3>
+                            <p>Egg Educación</p>
+                        </div>
+                            <h4><i class="uil uil-calendar-alt"></i> 06/2022</h4>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <h3>Programa Full Stack Developer - ITBA</h3>
+                            <p>Instituto Tecnológico de Buenos Aires</p>
+                        </div>
+                            <h4> <i class="uil uil-calendar-alt"></i> 08/2022</h4>
+                    </li>
+                    <div style="clear: both;"></div>
+                </ul>
             </div>
         </div>
-
         <div class="experiencia" id="proyectos">
             <h2 class="titulo">Experiencias</h2>
             <div class="uno">
@@ -336,25 +351,27 @@
             </div>
             <div class="textoContacto" id="contacto">
                 <h2>¡Trabajemos juntos!</h2>
-                <form action="">
+                <form action="https://formsubmit.co/rostrofioriloabril@gmail.com" method="POST" />
                     <div class="inputBox">
-                        <input type="text" required>
+                        <input type="text" name="nombre" required>
                         <span>Nombre</span> 
                     </div>
                     <div class="inputBox">
-                        <input type="text" required>
+                        <input type="email" name="email" required>
                         <span>Email</span>  
                     </div>
                     <div class="inputBox">
-                        <input type="text" required>
+                        <input type="text" name="número Telefónico" required>
                         <span>Telefono</span>  
                     </div>
                     <div class="inputBox">
-                        <input type="text">
+                        <textarea type="text" name="mensaje" rows="5" aria-expanded="false"></textarea>
                         <span>Mensaje</span>  
                     </div>
                     <div class="box">
-                        <button>Enviar</button>
+                        <input type="submit" value="Enviar">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
                     </div>
                 </form>
             </div>

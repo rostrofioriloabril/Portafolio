@@ -11,7 +11,8 @@
     padding: 1em 0;
     width: 100%;
     font-size: 1.8rem;
-    animation: tituloExp 1s alternate infinite cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    color: rgb(232, 23, 110);;
+    /* animation: tituloExp 1s alternate infinite cubic-bezier(0.18, 0.89, 0.32, 1.28); */
 }
 
 @keyframes tituloExp {
@@ -45,7 +46,7 @@
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
-    height: 390px;
+    height: 400px;
     overflow: hidden;
     align-items: center;
 }
@@ -56,7 +57,7 @@ button{
     border: none;
 }
 .uno button{
-    background: linear-gradient(to top, rgb(0, 0, 0) -30%, #e7a541);
+    background: linear-gradient(to top, rgb(0, 0, 0) -20%, #e7a541);
     border: 1px solid #000;
     border-radius: 5px;
     font-size: 15px;
@@ -97,11 +98,11 @@ button{
     color: transparent;
 }
 .dos {
-    margin-top: 4em;
+    margin-top: 3.5em;
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
-    height: 390px;
+    height: 400px;
     overflow: hidden;
     align-items: center;
 }
@@ -137,11 +138,11 @@ button{
 
 }
 .tres, .cuatro {
-    margin-top: 5em;
+    margin-top: 3.5em;
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
-    height: 480px;
+    height: 400px;
     overflow: hidden;
     align-items: center;
 }
@@ -156,7 +157,9 @@ button{
     height: 100%;
 }
 .imagen3 img{
+    width: 100%;
     max-width: 100%;
+    height: 100%;
     max-height: 100%;
     border-radius: 5%;
 }
@@ -188,7 +191,7 @@ button{
 .textProject4{
     margin: 0em 1em;
     text-align: justify;
-    width: 45%;
+    width: 50%;
     color: #fff;
 }
 .textProject4 h2{
@@ -198,16 +201,18 @@ button{
     margin-bottom: 0.5em;
 }
 .imagen4 img {
+    width: 100%;
+    height: 100%;
     max-width: 100%;
     max-height: 100%;
     border-radius: 5%;
 }
 .cinco{
-    margin-top: 1em;
+    margin-top: 3.5rem;
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
-    height: 405px;
+    height: 400px;
     overflow: hidden;
     align-items: center;
 }
