@@ -1,4 +1,5 @@
 *{
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -56,6 +57,7 @@ header{
     width: 100%;
     display: flex;
     align-content: center;
+    align-items: flex-start;
     flex-wrap: nowrap;
 }
 .texto{
@@ -81,8 +83,8 @@ header{
 }
 .texto p{
     margin-top: 1em;
-    width: 60%;
-    font-size: 1.8rem;
+    width: 65%;
+    font-size: 1.7rem;
     white-space: wrap;
 }
 .redes{
@@ -148,76 +150,11 @@ overflow: hidden;
     text-align: center;
     margin-bottom: 0.5rem;
     padding: 0.5em 0;
+    color: transparent;
     font-size: 1.8rem;
-    animation: tic 1.3s ;
     color: #fff;
 }
-@keyframes tic {
-    0%{
-        
-        background: linear-gradient(to top, rgb(0, 0, 0) 80%, rgb(232, 23, 110)1%);
-        -webkit-background-clip: text;
-        color: transparent;
-    }
-    15%{
-        
-    background: linear-gradient(to top, rgb(0, 0, 0) 67%, rgb(232, 23, 110)1%);
-    -webkit-background-clip: text;
-    color: transparent
-    }
-    25%{
-        
-    background: linear-gradient(to top, rgb(0, 0, 0) 64%, rgb(232, 23, 110)1%);
-    -webkit-background-clip: text;
-    color: transparent
-    }
-    30%{
-        
-    background: linear-gradient(to top, rgb(0, 0, 0) 62%, rgb(232, 23, 110)1%);
-    -webkit-background-clip: text;
-    color: transparent
-    }
-    40%{
-    background: linear-gradient(to top, rgb(0, 0, 0) 59%, rgb(232, 23, 110)1%);
-    -webkit-background-clip: text;
-    color: transparent
-    }
-    50%{
-    background: linear-gradient(to top, rgb(0, 0, 0) 57%,rgb(232, 23, 110)1%);
-    -webkit-background-clip: text;
-    color: transparent
-    }    
-    55%{
-    background: linear-gradient(to top, rgb(0, 0, 0) 55%, rgb(232, 23, 110)1%);
-    -webkit-background-clip: text;
-    color: transparent
-    }
-    60%{
-    background: linear-gradient(to top, rgb(0, 0, 0) 50%, rgb(232, 23, 110)1%);
-    -webkit-background-clip: text;
-    color: transparent
-    }
-    65%{ 
-    background: linear-gradient(to top, rgb(0, 0, 0) 45%, rgb(232, 23, 110)1%);
-    -webkit-background-clip: text;
-    color: transparent
-    }
-    70%{
-    background: linear-gradient(to top, rgb(0, 0, 0) 40%, rgb(232, 23, 110)1%);
-    -webkit-background-clip: text;
-    color: transparent
-    }
-    85%{
-    background: linear-gradient(to top, rgb(0, 0, 0) 35%, rgb(232, 23, 110)1%);
-    -webkit-background-clip: text;
-    color: transparent
-    }
-    100%{
-        background: linear-gradient(to top, rgb(0, 0, 0), rgb(232, 23, 110));
-        -webkit-background-clip: text;
-        color: transparent;
-    }
-}
+
 .timeline{
     position: relative;
     margin: 50px auto;
@@ -262,8 +199,8 @@ overflow: hidden;
 .content h3 {
     color: rgb(232, 23, 110);;
 }
-.content h4{
-    font-weight: lighter;
+li h4{
+    font-weight: 400;
 }
 .timeline ul li:nth-child(odd):before {
     content: '';
@@ -317,3 +254,20 @@ overflow: hidden;
     text-align: right;
 }
 
+@media only screen and (max-width: 620px){
+    .textos{
+        display: none;
+    }
+    .texto h1{
+        display: none;
+    }
+    .formacion{
+        display: none;
+    }
+    .sobreMi img {
+        display: none;
+    }
+    .sobreMi{
+        height: max-content;
+    }
+} 

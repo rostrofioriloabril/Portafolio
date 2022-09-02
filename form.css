@@ -12,61 +12,177 @@ form{
 }
 .inputBox {
    position: relative;
-   width: 250px;
+   width: 20rem;
+   height: 3rem;
+   margin-bottom: 1rem;
 }
-.inputBox input, textarea {
+.inputBox_textarea{
+   position: relative;
+   width: 20rem;
+}
+.inputBox input, .inputBox_textarea textarea {
    width: 100%;
+   resize: none;
    padding: 10px;
    border: 1px solid rgba(255, 255,255 , 0.25);
-   background: #1d2b3a;
    border-radius: 5px;
    outline: none;
    color: #fff;
-   margin-bottom: 10px;
+   outline: none;
+   margin-bottom: 15px;
    font-size: 1em;
    transition: 0.5s;
-}
-.inputBox span {
-   position: absolute;
-   left: 0;
-   padding: 10px;
-   pointer-events: none;
-   font-size: 1em;
-   color: rgba(255, 255, 255, 0.25);
-   text-transform: uppercase;
-   transition: 0.5s;
+   background: none ;
+   text-transform:initial;
 }
 
-.inputBox textarea:focus ~ span{
+
+label{
+   text-transform: uppercase;
+   opacity: .5;
+}
+.inputBox input:focus ~ label, .inputBox_textarea textarea:focus ~ label{
    color: #ffffff;
-   transform: translateX(10px) translateY(-7px);
+   transform: translateX(7px) translateY(1px);
    font-size: 0.65em;
    padding: 0 10px;
-   background:  #000;
+   background: #000;
+   letter-spacing: 0.2em;
+   opacity: 1;
+}
+.inputBox_textarea textarea:focus ~ label{
    border-left: 1px solid #dfd400;
    border-right: 1px solid #dfd400;
-   letter-spacing: 0.2em;
 }
-.inputBox input:focus ~ span{
+.inputBox:first-child input:focus ~ label{
    color: #ffffff;
-   transform: translateX(10px) translateY(-7px);
+   transform: translateX(7px) translateY(1px);
    font-size: 0.65em;
    padding: 0 10px;
-   background:  #000;
+   background: #000;
    border-left: 1px solid #00dfc4;
    border-right: 1px solid #00dfc4;
    letter-spacing: 0.2em;
 }
-.inputBox:nth-child(2) input:focus ~ span, textarea:focus {
+
+.inputBox:nth-child(2) input:focus ~ label{
+   background: #000;
+   color: #fff;
+   border-left: 1px solid #df005d;
+   border-right: 1px solid #df005d;
+   border-radius: 2px;
+}
+.inputBox:nth-child(2) input:focus, #email:not(:placeholder-shown)#email:not(:focus) {
+   border: 1px solid #df005d;
+}
+.inputBox_textarea textarea:focus, .textarea:focus,
+.textarea:not(:placeholder-shown).textarea:not(:focus) {
    background: #000;
    color: #fff;
    border-radius: 2px;
+   border: 1px solid #dfd400;
 }
-.inputBox input:focus{
+.inputBox:first-child input:focus, #nombre:not(:placeholder-shown)#nombre:not(:focus){
    border: 1px solid #00dfc4;
 }
+textarea {
+   margin-bottom: 0.rem;
+}
 
+.inputBox:nth-child(3) input:focus ~ label {
+   background: #000;
+   color: #fff;
+   border-left: 1px solid #5600df;
+   border-right: 1px solid #5600df;
+   border-radius: 2px;
+}
 
+.inputBox input:focus, #numero:not(:placeholder-shown)#numero:not(:focus){
+   border: 1px solid #5600df;
+}
+
+.inputBox:nth-child(4) input[type="text"]{
+   margin-bottom: 25px;
+}
+
+.form__input {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border: 2px solid #e1e5ee;
+   border-radius: 0.5rem;
+   font-family: inherit;
+   font-size: inherit;
+   color: white;
+   outline: none;
+   padding: 10px;
+   pointer-events: none;
+   background: transparent;
+   font-size: 1em;
+   text-transform: uppercase;
+
+ }
+     .form_input:hover {
+       border-color: #adffff;
+     }
+ 
+     /* Change border when input focus*/
+ 
+     .form__input:focus {
+       border-color: #18ffff;
+       
+     }
+   .form__label {
+   position: absolute;
+   left: 1rem;
+   width: 100%;
+   top: 0.8rem;
+   padding: 0 0.5rem;
+   color: rgba(255, 255, 255, 0.844);
+   cursor: text;
+   transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+   
+   }
+ 
+ /* 
+ 1. When the input is in the focus state
+ reduce the size of the label and move upwards 
+ 
+ 2. Keep label state when content is in input field 
+ */
+ 
+ .form__input:focus ~ .form__label,
+ .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label, .textarea:focus ~ label, 
+.textarea:not(:placeholder-shown).textarea:not(:focus) ~ .form__label {
+   top: -0.4rem;
+   font-size: 0.65rem;
+   left: 0.5rem;
+   background-color: #000;
+   width: auto;
+   opacity: 1;
+   border-radius: 2px;
+   letter-spacing: 0.2em;
+}
+#numero:not(:placeholder-shown)#numero:not(:focus) ~ .form__label{
+   border-left: 1px solid #5600df;
+   border-right: 1px solid #5600df;
+}
+#nombre:not(:placeholder-shown)#nombre:not(:focus) ~ .form__label{
+   border-left: 1px solid #18ffff;
+   border-right: 1px solid #18ffff;
+}
+#email:not(:placeholder-shown)#email:not(:focus) ~ .form__label{
+   border-left: 1px solid #df005d;
+   border-right: 1px solid #df005d;
+}
+
+.textarea:not(:placeholder-shown).textarea:not(:focus) ~ .form__label{
+   border-left: 1px solid #dfd400;
+   border-right: 1px solid #dfd400;
+
+}
 
 
 
@@ -89,13 +205,13 @@ form{
    align-items: center;
    background: rgba(0, 0, 0, 0.5);
    overflow: hidden;
-   margin: 0;
+   
 }
 .box::after{
    content: '';
    position: absolute;
-   inset: 4px;
-   background: #1d2b3a;
+   inset: 3px;
+   background: transparent;
    border-radius: 2px;
 }
 .box::before{
@@ -106,12 +222,20 @@ form{
    background: linear-gradient(#00ccff, #d400d4);
    animation: boton 1s linear infinite;
 }
+
+.box:hover{
+   transform: scale(1.2,1.2);
+}
+
 .box input[type="submit"]{
    position: absolute;
+   width: 100%;
    font-size: 1em;
    z-index: 98;
    background: none;
    color: #fff ;
+   text-shadow: 1px 1px 2px #000,
+               1px 1px 5px #00dfc4;
    cursor: pointer;
    border: none;
 }
@@ -122,5 +246,17 @@ form{
    }
    100%{
       transform: rotate(360deg);
+   }
+}
+
+@media only screen and (max-width: 620px){
+   .inputBox input, .inputBox_textarea textarea{
+      width: 100%;
+   }
+   .form__label{
+      width: 100%;
+   }
+   .inputBox_textarea textarea{
+      margin-bottom: 0.5rem;
    }
 }

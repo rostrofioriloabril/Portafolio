@@ -109,7 +109,8 @@
             <div class="texto">
                 <h1> Abril</h1>
                 <div class="derecha" >
-                    <p>Programadora FullStack jr,<br> actualmente participando del proyecto Oracle ONE en Alura Latam
+                    <p>Programadora FullStack Developer jr <br>
+                        actualmente participando del proyecto Oracle ONE en Alura Latam
                     </p>
                     </div>
                 <div class="redes"id="ancla1">
@@ -293,6 +294,9 @@
                 
             </div>
             <div class="dos">
+                <div class="response_dos">
+                    <img src="imagenes/juegoDeAdivinacionresponse.jpg" alt="">
+                </div>
                 <div class="textProject2">
                     <h2>Juego de Adivinación</h2>
                     <p>Sumergete en un juego que te hará pensar. Intenta adivinar el número correcto.</p>
@@ -301,8 +305,9 @@
                 <div class="imagen2">
                     <img src="imagenes/juegoDeAdivinacion.jpg" alt="">
                 </div>
-                
-
+                <div class="line2">
+                    <span class="line__line"></span>
+                </div>
             </div>
             <div class="tres">
                 <div class="imagen3">
@@ -314,7 +319,13 @@
                     <a href="https://rostrofioriloabril.github.io/Calculador-De-Imc/"><button>Ver</button></a>
                 </div>
             </div>
+            <div class="line2">
+            <span class="line__line"></span>
+            </div>
             <div class="cuatro">
+                <div class="response">
+                    <img src="imagenes/encriptadorDeTexto.jpg" alt="">
+                </div>
                 <div class="textProject4">
                     <h2>Encriptador de texto</h2>
                     <p>Inserta tu mensaje a ser encriptado. Diviértete enviando mensajes en código con tus amigos o familia.</p>
@@ -323,6 +334,9 @@
                 <div class="imagen4">
                     <img src="imagenes/encriptadorDeTexto.jpg" alt="">
                 </div>
+            </div>
+            <div class="line2">
+                <span class="line__line"></span>
             </div>
             <div class="cinco">
                 
@@ -335,6 +349,9 @@
                     <a href="https://rostrofioriloabril.github.io/Juego-Del-Ahorcado/"><button>Ver</button></a>
                 </div>
             </div>
+        </div>
+        <div class="line">
+            <span class="line__line"></span>
         </div>
             <div class="containerFondoC">
                 <div class="loader">
@@ -349,34 +366,42 @@
                 <span style="--1:9;"></span>
                 <span style="--1:10;"></span>
             </div>
+            
             <div class="textoContacto" id="contacto">
-                <h2>¡Trabajemos juntos!</h2>
+                <h2>¡Empecemos a codear!</h2>
                 <form action="https://formsubmit.co/rostrofioriloabril@gmail.com" method="POST" />
-                    <div class="inputBox">
-                        <input type="text" name="nombre" required>
-                        <span>Nombre</span> 
+                    <div class="inputBox form">
+                        <input type="text" name="nombre" class="form__input" id="nombre" required placeholder=" ">
+                        <label for="nombre" class="form__label">Nombre</label> 
+                    </div>
+                    <div class="inputBox form">
+                        <input type="email" id="email" name="email" class="inputBox_child2 form__input" required placeholder=" ">
+                        <label for="email" class="inputBox__span2  form__label">Email</span>  
                     </div>
                     <div class="inputBox">
-                        <input type="email" name="email" required>
-                        <span>Email</span>  
+                        <input type="text" id="numero" name="número Telefónico" class="inputBox_child3 form__input" required placeholder=" ">
+                        <label for="numero" class="inputBox__span3 form__label">Telefono</label>  
                     </div>
-                    <div class="inputBox">
-                        <input type="text" name="número Telefónico" required>
-                        <span>Telefono</span>  
-                    </div>
-                    <div class="inputBox">
-                        <textarea type="text" name="mensaje" rows="5" aria-expanded="false"></textarea>
-                        <span>Mensaje</span>  
+                    <div class="inputBox_textarea">
+                        <textarea type="text" id="mensaje" name="mensaje"
+                        rows="5" class="inputBox_child4 textarea" aria-expanded="false" placeholder=" "></textarea>
+                        <label for="mensaje" class="inputBox__span4 form__label">Mensaje</label>  
                     </div>
                     <div class="box">
                         <input type="submit" value="Enviar">
                         <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_template" value="box">
+                        <!-- <input type="hidden" name="_template" value="table"> -->
+                        <input type="hidden" name="_next" value="https://rostrofioriloabril.github.io/Portafolio/">
                     </div>
                 </form>
             </div>
         </div>
-        <footer>Rostro Fiorilo Abril Micaela-2022</footer>
+        <footer> 
+            <h4>
+                Abril Micaela Rostro Fiorilo | 2022
+            </h4>
+        </footer>
     </div>
     
 <script src="main.js"></script>

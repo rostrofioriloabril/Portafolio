@@ -71,3 +71,10 @@
 .cocina:hover{
     transform: rotate(200deg);
 }
+
+
+@media only screen and (max-width: 620px){
+    .habilidades{
+        display: none;
+    }
+}
