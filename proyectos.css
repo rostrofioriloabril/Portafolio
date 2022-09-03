@@ -263,6 +263,9 @@ button{
  }
 
 @media only screen and (max-width: 620px){
+    .experiencia{
+       padding-top: 0;
+    }
     .uno, .dos,.tres,.cuatro,.cinco{
         margin-left: 1rem;
         margin-right: 1rem;
@@ -272,18 +275,26 @@ button{
         align-items: center;
     }
     .imagen1 img{
-        width: 100%;
+        width: 90%;
+        height: 100%;
     }
     .experiencia .titulo{
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
 
     .textProject1{
         width: 100%;
+        text-align: center;
+    }
+    .textProject1{
+        margin: 1rem 0rem;
     }
     .imagen1{
         width: 100%;
         margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
     }
     .uno .video1 {display: none;}
     .imagen2{
@@ -296,6 +307,15 @@ button{
     .response_dos img {
         width: 100%;
     }
+    .textProject2 {
+        width: 85%;
+        text-align: center;
+    }
+    .textProject2 h2 {
+        background: linear-gradient(45deg,#a00fbd 20%, #0a0361 86%, #a00fbd 34%);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
     .imagen3{
         margin-left: 0;
         margin-right: 0;
@@ -307,7 +327,9 @@ button{
     .textProject3 h2{
         margin-top: 0.5rem;
     }
-
+    .cuatro{
+        margin-top: 2.5rem;
+    }
     .imagen4{
         width: 100%;
     }
@@ -335,6 +357,9 @@ button{
         margin-top: 2rem;
         margin-bottom: 1.5rem;
     }
+    .cinco{
+        margin-top: 2rem;
+    }
     .cinco .imagen5{
         width: 90%;
     }
@@ -343,6 +368,13 @@ button{
         margin-top: 0.5rem;
     }
     .line2{
-        display: block;
+        display: flex;
+        margin-top: 3rem;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .line{
+        margin-bottom: 0.5rem;
     }
 }

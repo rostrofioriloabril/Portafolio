@@ -13,7 +13,9 @@
     <link href="footer.css" rel="stylesheet">
     <link href="form.css" rel="stylesheet">
     <link rel="stylesheet" href="animaciones.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>Portafolio</title>
 </head>
@@ -112,20 +114,28 @@
                     <p>Programadora FullStack Developer jr <br>
                         actualmente participando del proyecto Oracle ONE en Alura Latam
                     </p>
-                    </div>
+                </div>
+                <div class="derecharesponsive" >
+                    <p>Programadora FullStack Developer jr participando del proyecto Oracle ONE en Alura Latam
+                    </p>
+                </div>
                 <div class="redes"id="ancla1">
-                    <a href="https://github.com/rostrofioriloabril" target="_BLANK">Github <i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/rostrofioriloabril" target="_BLANK">Linkedin <i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://www.instagram.com/abru_rostro/" target="_BLANK">Instagram <i class="fa-brands fa-instagram"></i></a>
-                    <a href="RostroFioriloAbril.pdf" id="cv" download="">Curriculo <i class="fa-solid fa-download"></i></a>
+                    <a href="https://github.com/rostrofioriloabril" target="_BLANK">Github</a><i class="fa-brands fa-github"></i>
+                    <a href="https://www.linkedin.com/in/rostrofioriloabril" target="_BLANK">Linkedin</a><i class="fa-brands fa-linkedin-in"></i>
+                    <a href="https://www.instagram.com/abru_rostro/" target="_BLANK">Instagram</a> <i class="fa-brands fa-instagram"></i>
+                    <a href="RostroFioriloAbril.pdf" id="cv" download="">Curriculo</a><i class="fa-solid fa-download"></i>
                 </div>
             </div>
         </div>
     </header>
         <div class="sobreMi">
             <div class="text">
-
                 <h2>Sobre mi</h2>
+            </div>
+            <div class="imagenresponsive">
+                <img class="img_responsive" src="imagenes/fotopng.png" alt="Abril">
+            </div>
+            <div class="text">
                 <p>¡Hola! Me llamo Abril Micaela Rostro Fiorilo, tengo 19 años, comencé en el mundo de la programación hace 7
                 meses. Tengo experiencia en diseños creativos, habilidades responsive, manejo y uso de python, js, django, desarrollo de Apis y sqlite. Me comprometo a la hora de hacer mi trabajo, produzco estilos interactivos con el usuario, sitos seguros y creo firmemente que cada dia se puede aprender algo nuevo.<br>
                 Soy autodicacta, por lo que contantemente estoy adquiriendo nueva información. También me considero muy perseverante y capaz de cumplir con todo reto
@@ -134,6 +144,70 @@
                 <div class="imagen">
                     <img src="imagenes/fotopng.png" alt="Abril">
                 </div>
+        </div>
+        <div class="column column--rigth">
+            <article class="card">
+                <div class="titles">
+                    <button class="card__title1"><i class="uil uil-bolt-alt skills_icon"></i> Skills</button>
+                    <div class="vertical__line"></div>
+                    <button class="card__title2"><i class="uil uil-desktop hobbies_icon"></i> Hobbies</button>
+                </div>
+                <div class="skillsresponsive">
+                    <div class="skills__item">
+                        <p class="skills__tech">HTML</p>
+                        <div class="skills__bar skills__bar--80"></div>
+                        <span>80%</span>
+                    </div>
+                    <div class="skills__item">
+                        <p class="skills__tech">CSS</p>
+                        <div class="skills__bar skills__bar--70"></div>
+                        <span>70%</span>
+                    </div>
+                    <div class="skills__item">
+                        <p class="skills__tech">Js</p>
+                        <div class="skills__bar skills__bar--60"></div>
+                        <span>60%</span>
+                    </div>
+                    <div class="skills__item">
+                        <p class="skills__tech">Git</p>
+                        <div class="skills__bar skills__bar---50"></div>
+                        <span>50%</span>
+                    </div>
+                    <div class="skills__item">
+                        <p class="skills__tech">Github</p>
+                        <div class="skills__bar skills__bar--50"></div>
+                        <span>50%</span>
+                    </div>
+                    <div class="skills__item">
+                        <p class="skills__tech">Python</p>
+                        <div class="skills__bar skills__bar-50"></div>
+                        <span>50%</span>
+                    </div>
+                    <div class="skills__item">
+                        <p class="skills__tech">Django</p>
+                        <div class="skills__bar skills__bar--40"></div>
+                        <span>40%</span>
+                    </div>
+                    <div class="skills__item">
+                        <p class="skills__tech">SQLite</p>
+                        <div class="skills__bar skills__bar----50"></div>
+                        <span>50%</span>
+                    </div>
+                </div>
+                <div class="hobbies__content">
+                    
+                    <h5><i class="fa-solid fa-headphones musica"></i><br> Oir Música</h5>
+                    <div>
+                        <h5><i class="fa-solid fa-play video"></i><br> Ver videos</h5>
+                    </div>
+                    <div>
+                        <h5><i class="fa-solid fa-cookie cocina"></i><br> Pastelería</h5>
+                    </div>
+                    <div>
+                        <h5><i class="uil uil-letter-english-a"></i><br> Aprender inglés</h5>
+                    </div>
+                </div>
+            </article>
         </div>
         <div class="habilidades" id="habilidades">
 
@@ -236,8 +310,12 @@
                     <h5>Ver videos</h5>
                 </div>
                 <div>
-                    <i class="fa-solid fa-cookie cocina"></i>
-                    <h5>Cocinar</h5>
+                    <i class="fa-solid fa-cookie cocina"></i> 
+                    <h5>Pastelería</h5>
+                </div>
+                <div>
+                    <i class="uil uil-letter-english-a ingles"></i>
+                    <h5>Aprender inglés</h5>
                 </div>
             </div>
         </div>
@@ -291,7 +369,9 @@
                     <p>Pagina orientada a fines comerciales, especialmente, venta de calzado femenino. Uso de HTML, CSS y JS</p>
                     <a href="https://rostrofioriloabril.github.io/KadinTienda/"><button>Ver</button></a>
                 </div>
-                
+            </div>
+            <div class="line2">
+                <span class="line__line"></span>
             </div>
             <div class="dos">
                 <div class="response_dos">
@@ -305,9 +385,9 @@
                 <div class="imagen2">
                     <img src="imagenes/juegoDeAdivinacion.jpg" alt="">
                 </div>
-                <div class="line2">
-                    <span class="line__line"></span>
-                </div>
+            </div>
+            <div class="line2">
+                <span class="line__line"></span>
             </div>
             <div class="tres">
                 <div class="imagen3">
@@ -403,8 +483,6 @@
             </h4>
         </footer>
     </div>
-    
-<script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
-
 </html>

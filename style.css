@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+}
 *{
     scroll-behavior: smooth;
     margin: 0;
@@ -127,9 +131,9 @@ header{
     margin-left: 3rem;
 }
 .imagen {
-width: 20%;
-height: 200px;
-overflow: hidden;
+    width: 20%;
+    height: 200px;
+    overflow: hidden;
 }
 .imagen img {
     object-fit: contain;
@@ -253,7 +257,12 @@ li h4{
     float: right;
     text-align: right;
 }
-
+.imagenresponsive{
+    display: none;
+}
+.derecharesponsive{
+    display: none;
+}
 @media only screen and (max-width: 620px){
     .textos{
         display: none;
@@ -261,13 +270,88 @@ li h4{
     .texto h1{
         display: none;
     }
-    .formacion{
-        display: none;
-    }
-    .sobreMi img {
-        display: none;
+    .timeline{
+        width: 100%;
     }
     .sobreMi{
-        height: max-content;
+        height: auto;
+        margin: 0 1rem 4rem;
+        width: calc(100% - 2rem);
+        display: flex;
+        justify-content: center;
     }
-} 
+    .sobreMi .text {
+        width: 90%;
+        margin: 0;
+    }
+    .imagen{
+        display: none;
+    }
+    .imagenresponsive{
+        margin-bottom: 3.2rem;
+        display: block;
+        height: 200px;
+        width: 75%;
+    }
+    .img_responsive{
+        object-fit: contain;
+        height:100%;
+        width: 100%;
+        border-radius: 50%;
+        box-sizing: border-box;
+        background-color: transparent;
+    }
+    .formacion{
+        margin-top: 2rem;
+    }
+    .presentacion{
+        display: flex;
+        padding: 0 1rem;
+        align-content: space-between;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0;
+        overflow: hidden;
+        height: 100%;
+        max-height: 615px;
+    }
+    .presentacion .texto{
+        margin: 0;
+    }
+    .texto{
+        width: 100%;
+    }
+    .texto p{
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .derecha{
+        display: none;
+    }
+    .derecharesponsive{
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+    
+    }
+    .redes{
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+    .redes a {
+        display: none;
+    }
+    .redes i {
+        display: block;
+        color: #fff;
+        margin: 0;
+        font-size: 1.7rem;
+    }
+    .texto h1{
+        text-align: center;
+    }} 
