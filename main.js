@@ -1,13 +1,23 @@
-let span1 = document.querySelector('.inputBox__span1');
-let span2 = document.querySelector('.inputBox__span2');
-let span3 = document.querySelector('.inputBox__span3');
-let span4 = document.querySelector('.inputBox__span4');
+let label1 = document.querySelector('.inputBox__span1');
+let label2 = document.querySelector('.inputBox__span2');
+let label3 = document.querySelector('.inputBox__span3');
+let label4 = document.querySelector('.inputBox__span4');
 
 //-------------------------------------------------------//
-let input1 = document.querySelector('.inputBox_child1');
+let input1 = document.querySelector('#nombre');
 let input2 = document.querySelector('.inputBox_child2');
 let input3 = document.querySelector('.inputBox_child3');
 let input4 = document.querySelector('.inputBox_child4');
+
+
+input1.addEventListener('click', function(){
+    label1.style.width='100%'
+})
+
+
+
+
+
 
 let skills = document.querySelector('.skillsresponsive');
 let skillbutton = document.querySelector('.card__title1');
@@ -16,6 +26,9 @@ let skillsIcon = document.querySelector('.skills_icon');
 let hobbies = document.querySelector('.hobbies__content');
 let hobbiesbutton = document.querySelector('.card__title2');
 let hobbiesIcon = document.querySelector('.hobbies_icon');
+
+skillsIcon.style.color='yellow';
+skillbutton.style.borderBottom= '1px solid #fff';
 
 skillbutton.addEventListener('click', function(){
     hobbies.style.display='none';

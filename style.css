@@ -263,12 +263,25 @@ li h4{
 .derecharesponsive{
     display: none;
 }
+.redes2{
+    display: none;
+}
 @media only screen and (max-width: 620px){
+    .navegacion{
+        display: none;
+    }
     .textos{
         display: none;
     }
     .texto h1{
-        display: none;
+        font-size: 5.2rem;
+        padding-top: 2rem;
+        font-family: monospace;
+        white-space: nowrap;
+        margin: 0;
+        border: none;
+        width: 100%;
+        animation: none;
     }
     .timeline{
         width: 100%;
@@ -312,14 +325,15 @@ li h4{
         justify-content: space-around;
         margin: 0;
         overflow: hidden;
-        height: 100%;
-        max-height: 615px;
+        height: 100vh;
     }
     .presentacion .texto{
         margin: 0;
-    }
-    .texto{
         width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
     .texto p{
         width: 100%;
@@ -330,12 +344,14 @@ li h4{
         display: none;
     }
     .derecharesponsive{
-        height: 100%;
         display: flex;
         align-items: flex-end;
     
     }
     .redes{
+        display: none;
+    }
+    .redes2{
         display: flex;
         width: 100%;
         height: auto;
@@ -343,11 +359,7 @@ li h4{
         align-items: flex-end;
         justify-content: space-around;
     }
-    .redes a {
-        display: none;
-    }
-    .redes i {
-        display: block;
+    .redes2 i {
         color: #fff;
         margin: 0;
         font-size: 1.7rem;

@@ -103,6 +103,9 @@ footer h4 {
    font-weight: 100;
 }
 
-/*
-@media only screen and (max-width:400px){
-}*/
+
+@media only screen and (max-width:670px){
+   .loader{
+      display: none;
+   }
+}
