@@ -1,0 +1,1042 @@
+/*style.css termina en linea 491*/
+
+@media only screen and (min-width:1071px){
+    .texto {
+        display: flex;
+        margin-top: 4em;
+        margin-left: 4em;
+        width: auto;
+        color: #fff;
+        height: calc(100vh - 4rem - 50px);
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .sobreMi{
+        margin-top: 2rem;
+        height: auto;
+        padding: 2rem 2rem;
+    }
+    .sobreMi .text {
+        width: 50%;
+        margin-top: -3rem;
+    }
+    .text__titulo{
+        margin-bottom: 0rem;
+    }
+    .text__titulo h2 {
+        padding-left: 11%;
+        text-align: left;
+    }
+    
+}
+
+@media only screen and (min-width:841px) and (max-width:1070px){
+
+    .texto {
+        display: flex;
+        margin-top: 4em;
+        margin-left: 4em;
+        width: auto;
+        color: #fff;
+        height: calc(100vh - 4rem - 50px);
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .sobreMi{
+        margin-top: 2rem;
+        height: auto;
+        padding: 2rem 0 2rem 0;
+    }
+    .sobreMi .text {
+        width: 50%;
+        margin-top: 0;
+    }
+    .text__titulo{
+        margin-bottom: 0.5rem;
+    }
+    .text__titulo h2 {
+        padding-left: 9%;
+        text-align: left;
+    }
+    
+}
+
+
+
+
+@media only screen and (min-width:711px) and (max-width:840px){
+    .texto {
+        display: flex;
+        margin-top: 4em;
+        margin-left: 4em;
+        width: auto;
+        color: #fff;
+        height: calc(100vh - 4rem - 50px);
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .sobreMi{
+        margin-top: 2rem;
+        height: auto;
+        padding: 2rem 0 2rem 0;
+    }
+    .sobreMi .text {
+        width: 50%;
+        margin-top: 0;
+    }
+    .text__titulo{
+        margin-bottom: 0.5rem;
+    }
+    .text__titulo h2 {
+        padding-left: 8%;
+        text-align: left;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:621px) and (max-width:710px){
+    .texto {
+        display: flex;
+        margin-top: 4em;
+        margin-left: 4em;
+        width: auto;
+        color: #fff;
+        height: calc(100vh - 4rem - 50px);
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .sobreMi{
+        margin-top: 2rem;
+        height: auto;
+        padding: 2rem 0 2rem 0;
+    }
+    .sobreMi .text {
+        width: 50%;
+        margin-top: 0;
+    }
+    .text__titulo{
+        margin-bottom: 0.5rem;
+    }
+    .text__titulo h2 {
+        padding-left: 6%;
+        text-align: left;
+    }
+}
+@media only screen and (min-width:506px)and (max-width: 620px){
+    .navegacion{
+        display: none;
+    }
+    .texto {
+        margin: 0;
+        margin-top: 4em;
+        /* margin-left: 2em; */
+    }
+    .textos {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .textos a {
+        margin-right: 1rem;
+        color: #fff;
+        font-size: 0.9rem;
+    }
+    .presentacion {
+        display: flex;
+        padding: 0 1rem;
+        align-content: space-between;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0;
+        overflow: hidden;
+        height: 100vh;
+    }
+    .presentacion .texto {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100vh;
+    }
+    .texto h1 {
+        font-size: 150px;
+        font-family: monospace;
+        white-space: nowrap;
+        border-right: 4px solid;
+        width: 497px;
+        margin-left: 2rem;
+        animation: typing 3s infinite steps(12) alternate;
+        overflow: hidden;
+    }
+    .texto p {
+        margin-top: 1em;
+        width: 80%;
+        font-size: 1.5rem;
+        white-space: wrap;
+    }
+    .derecha{
+        margin-top: 1em;
+        margin-left: 2rem;
+        width: 90%;
+        font-size: 1.5rem;
+    }
+    .texto p {
+        /* margin-top: 1em; */
+        margin: 0;
+        width: 100%;
+    }
+    .redes {
+        display: flex;
+        width: 100%;
+        margin-top: 2em;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .sobreMi{
+        height: auto;
+        margin: 0 1rem 3rem;
+        width: calc(100% - 2rem);
+        display: flex;
+        justify-content: center;
+    }
+    .sobreMi .text {
+        width: 100%;
+        margin: 0;
+        height: auto;
+    }
+    .text__titulo {
+        background: linear-gradient(#ff2d75, rgba(255, 0, 0, 0.781));
+        -webkit-background-clip: text;
+        color: transparent;
+        text-align: center;
+        /* margin-bottom: -1em; */
+        font-size: 1.8rem;
+        height: 50px;
+    }
+    .imagen{
+        display: none;
+    }
+    .imagenresponsive{
+        margin-bottom: 1.5rem;
+        display: flex;
+        height: 200px;
+        width: 100%;
+        justify-content: center;
+    }
+    .img_responsive {
+        object-fit: fill;
+        height: 100%;
+        /* width: 100%; */
+        border-radius: 20%;
+        box-sizing: border-box;
+        background-color: transparent;
+    }
+}
+
+@media only screen and (min-width:441px)and (max-width: 505px){
+    
+    .navegacion{
+        display: none;
+    }
+    
+    .textos{
+        display: none;
+    }
+    .texto h1{
+        font-size: 5.2rem;
+        padding-top: 2rem;
+        font-family: monospace;
+        white-space: nowrap;
+        margin: 0;
+        border: none;
+        width: 100%;
+        animation: none;
+    }
+    .timeline{
+        width: 100%;
+    }
+    .timeline ul li {
+        list-style: none;
+        width: 50%;
+        position: relative;
+        padding: 15px 30px;
+        box-sizing: border-box;
+    }
+    .sobreMi{
+        height: auto;
+        margin: 0 1rem 3rem;
+        width: calc(100% - 2rem);
+        display: flex;
+        justify-content: center;
+    }
+    .sobreMi .text {
+        width: 100%;
+        margin: 0;
+        height: auto;
+    }
+    .text__titulo {
+        background: linear-gradient(#ff2d75, rgba(255, 0, 0, 0.781));
+        -webkit-background-clip: text;
+        color: transparent;
+        text-align: center;
+        /* margin-bottom: -1em; */
+        font-size: 1.8rem;
+        height: 50px;
+    }
+    .imagen{
+        display: none;
+    }
+    .imagenresponsive{
+        margin-bottom: 1.5rem;
+        display: flex;
+        height: 200px;
+        width: 100%;
+        justify-content: center;
+    }
+    .img_responsive {
+        object-fit: fill;
+        height: 100%;
+        /* width: 100%; */
+        border-radius: 20%;
+        box-sizing: border-box;
+        background-color: transparent;
+    }
+    .formacion{
+        margin-top: 2rem;
+    }
+    .presentacion{
+        display: flex;
+        padding: 0 1rem;
+        align-content: space-between;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0;
+        overflow: hidden;
+        height: 100vh;
+    }
+    .presentacion .texto{
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .texto p{
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .derecha{
+        display: none;
+    }
+    .derecharesponsive{
+        display: flex;
+        align-items: flex-end;
+    
+    }
+    .redes{
+        display: none;
+    }
+    .redes2{
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+    .redes2 i {
+        color: #fff;
+        margin: 0;
+        font-size: 1.7rem;
+    }
+    .texto h1{
+        text-align: center;
+    }
+}
+
+/*-------------------------------------------------*/
+@media only screen and (max-width: 440px){
+    .navegacion{
+        display: none;
+    }
+    .textos{
+        display: none;
+    }
+    .texto h1{
+        font-size: 5.2rem;
+        padding-top: 2rem;
+        font-family: monospace;
+        white-space: nowrap;
+        margin: 0;
+        border: none;
+        width: 100%;
+        animation: none;
+    }
+    .timeline{
+        width: 100%;
+    }
+    .timeline ul li {
+        list-style: none;
+        width: 50%;
+        position: relative;
+        padding: 15px 15px;
+        box-sizing: border-box;
+    }
+    .sobreMi{
+        height: auto;
+        margin: 0 1rem 3rem;
+        width: calc(100% - 2rem);
+        display: flex;
+        justify-content: center;
+    }
+    .sobreMi .text {
+        width: 100%;
+        margin: 0;
+        height: auto;
+    }
+    .text__titulo {
+        
+        text-align: center;
+        /* margin-bottom: -1em; */
+        font-size: 1.8rem;
+        height: 50px;
+    }
+    .imagen{
+        display: none;
+    }
+    .imagenresponsive{
+        margin-bottom: 1.5rem;
+        display: flex;
+        height: 200px;
+        width: 100%;
+        justify-content: center;
+    }
+    .img_responsive {
+        object-fit: fill;
+        height: 100%;
+        /* width: 100%; */
+        border-radius: 20%;
+        box-sizing: border-box;
+        background-color: transparent;
+    }
+    .formacion{
+        margin-top: 2rem;
+    }
+    .presentacion{
+        display: flex;
+        padding: 0 1rem;
+        align-content: space-between;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0;
+        overflow: hidden;
+        height: 100vh;
+    }
+    .presentacion .texto{
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .texto p{
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .derecha{
+        display: none;
+    }
+    .derecharesponsive{
+        display: flex;
+        align-items: flex-end;
+    
+    }
+    .redes{
+        display: none;
+    }
+    .redes2{
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+    .redes2 i {
+        color: #fff;
+        margin: 0;
+        font-size: 1.7rem;
+    }
+    .texto h1{
+        text-align: center;
+    }
+}
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+
+
+/*habilidades.css termina en linea 689*/
+
+@media only screen and (min-width: 621px){
+    .habilidades{
+        height: auto;
+    }
+    .skills div {
+        min-width: 100px;
+    }
+}
+@media only screen and (max-width: 620px){
+    .habilidades{
+        display: none;
+    }
+    .column{
+        display: block;
+        color: #fff;
+
+    }
+    .titles{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 30px;
+    }
+    .skills__tech{
+        width: 15%;
+        cursor: pointer;
+    }
+    
+    .skillsresponsive {
+        margin-top: 1rem;
+        display: grid;
+        gap: 0.5em;
+        grid-template-columns: repeat(3.1fr);
+        grid-template-rows: repeat(3, min-content);
+        padding: 1rem 1rem;
+    }
+    
+    .skills__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .skills__bar,
+    .skills__bar::after {
+        width: 175px;
+        position: relative;
+        height: 8px;
+        background-color: #888;
+        border-radius: .4rem;
+        overflow: hidden;
+    }
+    
+    .skills__bar::after {
+        content: "";
+        position: absolute;
+        left: -175px;
+        background-color: rgba(0, 255, 195, 0.701);
+        transition: var(--transition);
+        animation: style-bar 2s ease-in-out forwards;
+    }
+    
+    /*--------------Para cada valor------------------------*/
+    .skills__bar--80::after {
+        --skills-bar: 80%;
+        background-color: rgba(241, 101, 41, 133);
+    }
+    .skills__bar--70::after {
+        --skills-bar: 70%;
+        background-color: rgb(38, 77, 228);
+    }
+    .skills__bar--60::after {
+        --skills-bar: 60%;
+        background-color: rgb(247, 223, 30);
+    }
+    .skills__bar---50::after {
+        --skills-bar: 50%;
+        background-color:  rgb(65, 48, 0);
+    }
+    .skills__bar--50::after {
+        --skills-bar: 50%;
+        background-color: #000;
+    }
+    .skills__bar-50::after {
+        --skills-bar: 50%;
+        background-color: rgb(255, 232, 115);
+    }
+    .skills__bar----50::after {
+        --skills-bar: 50%;
+        background-color: rgb(0, 59, 87);
+    }
+    .skills__bar--40::after {
+        --skills-bar: 40%;
+        background-color: rgb(9, 45, 31);
+    }
+    .card__title1, .card__title2{
+        font-weight: normal;
+        background-color: transparent;
+        color: #fff;
+        font-size: 1.3rem;
+        margin: 0;
+        padding: 0;
+    }
+    .card__title1{
+        font-size: 1.35rem;
+    }
+    .vertical__line{
+        width: 1px;
+        border: 1px solid #fff;
+        height: 100%;
+    }
+    .hobbies__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+    .hobbies__content h5{
+        margin-top: 1rem;
+        font-size: 1rem;
+        font-weight: 100;
+    }
+    .hobbies__content{
+        display: none;
+    }
+    
+    @keyframes style-bar {
+        to {
+            transform: translateX(var(--skills-bar));
+        }
+    
+    }
+}
+@media only screen and (max-width: 327px){
+    .skills__bar, .skills__bar::after {
+    width: 100px;
+    position: relative;
+    height: 8px;
+    background-color: #888;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    }
+    .skills__bar::after {
+        content: "";
+        position: absolute;
+        left: -100px;
+        background-color: rgba(0, 255, 195, 0.701);
+        transition: var(--transition);
+        animation: style-bar 2s ease-in-out forwards;
+    }   
+    /*--------------Para cada valor------------------------*/
+    .skills__bar--80::after {
+        --skills-bar: 80%;
+        background-color: rgba(241, 101, 41, 133);
+    }
+    .skills__bar--70::after {
+        --skills-bar: 70%;
+        background-color: rgb(38, 77, 228);
+    }
+    .skills__bar--60::after {
+        --skills-bar: 60%;
+        background-color: rgb(247, 223, 30);
+    }
+    .skills__bar---50::after {
+        --skills-bar: 50%;
+        background-color:  rgb(65, 48, 0);
+    }
+    .skills__bar--50::after {
+        --skills-bar: 50%;
+        background-color: #000;
+    }
+    .skills__bar-50::after {
+        --skills-bar: 50%;
+        background-color: rgb(255, 232, 115);
+    }
+    .skills__bar----50::after {
+        --skills-bar: 50%;
+        background-color: rgb(0, 59, 87);
+    }
+    .skills__bar--40::after {
+        --skills-bar: 40%;
+        background-color: rgb(9, 45, 31);
+    }
+}
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+
+/*proyectos.css termina en linea 1038*/
+
+@media only screen and (min-width: 710px) and (max-width: 900px){
+    .uno{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .video1 {
+        display: none;
+    }
+    .imagen1 img {
+        width: 100%;
+        height: 100%;
+    }
+    .textProject1 {
+        text-align: center;
+        width: 38%;
+        margin-right: 3rem;
+        color: #fff;
+    }
+    .textProject2{
+        width: 38%;
+    }
+    .textProject2 h2 {
+        background: linear-gradient(45deg,#a00fbd 20%, #0a0361 112%, #a00fbd 34%);
+        -webkit-background-clip: text;
+        color: transparent;
+        margin-bottom: 0.5em;
+    }
+    .imagen2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .dos, .tres, .cuatro, .cinco{
+        height: 350px;
+        margin: 0;
+    }
+    .textProject3{
+        width: 38%;
+    }
+    .imagen3 img {
+        object-fit: contain;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        /* max-height: 100%; */
+        border-radius: 5%;
+    }
+    .imagen4 {
+        width: 50%;
+        height: 75%;
+    }
+}
+@media only screen and (min-width:621px) and (max-width:710px){
+    .line2 {
+        display: flex;
+        margin: 2rem 0rem;
+    }
+    .uno, .dos,.tres,.cuatro,.cinco{
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .imagen1 img{
+        width: 90%;
+        height: 100%;
+    }
+    .experiencia .titulo{
+        margin-bottom: 1.5rem;
+    }
+
+    .textProject1{
+        width: 100%;
+        text-align: center;
+    }
+    .textProject1{
+        margin: 1rem 0rem;
+    }
+    .imagen1{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .video1 {
+        display: none;
+    }
+    .imagen2{
+        display: none;
+    }
+    .response_dos{
+        display: block;
+        width: 100%;
+    }
+    .response_dos img {
+        width: 100%;
+    }
+    .textProject2 {
+        width: 85%;
+        text-align: center;
+    }
+    .textProject2 h2 {
+        background: linear-gradient(45deg,#a00fbd 20%, #0a0361 86%, #a00fbd 34%);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    .imagen3{
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .textProject3{
+        width: 85%;
+    }
+    .textProject3 h2{
+        margin-top: 0.5rem;
+    }
+    .cuatro{
+        margin-top: 2.5rem;
+    }
+    .imagen4{
+        width: 100%;
+    }
+    .imagen4 img{
+        display: none;
+    }
+    .response{
+        display: block;
+        width: 100%;
+    }
+    .response img {
+        width: 100%;
+        height: 100%;
+        border-radius: 2px;
+    }
+    .textProject4{
+        width: 100%;
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+    .cinco{
+        margin-top: 0rem;
+    }
+    .line {
+        margin: 1.5rem 0rem 0.5rem;
+    }
+    .cinco{
+        margin-top: 2rem;
+    }
+    .cinco .imagen5{
+        width: 90%;
+    }
+    .textProject5 {
+        width: calc(100% - 2em);
+        margin-top: 0.5rem;
+    }
+    .line2{
+        display: flex;
+        margin-top: 3rem;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .line{
+        margin-bottom: 0.5rem;
+    }
+    .imagen3, .imagen1{
+        display: none;
+    }
+    .experiencia {
+        padding-top: 0;
+        margin: 0 1rem;
+        width: calc(100% - 2rem);
+    }
+    .uno, .dos, .tres, .cuatro, .cinco {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 620px){
+    .line2 {
+        display: flex;
+        margin: 2rem 0rem;
+    }
+    .uno, .dos,.tres,.cuatro,.cinco{
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .imagen1 img{
+        width: 90%;
+        height: 100%;
+    }
+    .experiencia .titulo{
+        margin-bottom: 1.5rem;
+    }
+
+    .textProject1{
+        width: 100%;
+        text-align: center;
+    }
+    .textProject1{
+        margin: 1rem 0rem;
+    }
+    .imagen1{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .uno .video1 {display: none;}
+    .imagen2{
+        display: none;
+    }
+    .response_dos{
+        display: block;
+        width: 100%;
+    }
+    .response_dos img {
+        width: 100%;
+    }
+    .textProject2 {
+        width: 85%;
+        text-align: center;
+    }
+    .textProject2 h2 {
+        background: linear-gradient(45deg,#a00fbd 20%, #0a0361 86%, #a00fbd 34%);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    .imagen3{
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .textProject3{
+        width: 85%;
+    }
+    .textProject3 h2{
+        margin-top: 0.5rem;
+    }
+    .cuatro{
+        margin-top: 2.5rem;
+    }
+    .imagen4{
+        width: 100%;
+    }
+    .imagen4 img{
+        display: none;
+    }
+    .response{
+        display: block;
+        width: 100%;
+    }
+    .response img {
+        width: 100%;
+        height: 100%;
+        border-radius: 2px;
+    }
+    .textProject4{
+        width: 100%;
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+    .cinco{
+        margin-top: 0rem;
+    }
+    .line {
+        margin: 1.5rem 0rem 0.5rem;
+    }
+    .cinco{
+        margin-top: 2rem;
+    }
+    .cinco .imagen5{
+        width: 90%;
+    }
+    .textProject5 {
+        width: calc(100% - 2em);
+        margin-top: 0.5rem;
+    }
+    .line2{
+        display: flex;
+        margin-top: 3rem;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .line{
+        margin-bottom: 0.5rem;
+    }
+    .imagen3, .imagen1{
+        display: none;
+    }
+    .experiencia {
+        padding-top: 0;
+        margin: 0 1rem;
+        width: calc(100% - 2rem);
+    }
+    .uno, .dos, .tres, .cuatro, .cinco {
+        margin: 0;
+        width: 100%;
+    }
+}
+/*---proyectos.css---*/
+
