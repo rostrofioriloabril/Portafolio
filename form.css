@@ -166,7 +166,6 @@ textarea {
    letter-spacing: 0.2em;
 }
 #numero:not(:placeholder-shown)#numero:not(:focus) ~ .form__label{
-   width: 100%;
    border-left: 1px solid #5600df;
    border-right: 1px solid #5600df;
 }
@@ -259,5 +258,14 @@ textarea {
    }
    .inputBox_textarea textarea{
       margin-bottom: 0.5rem;
+   }
+}
+@media only screen and (max-width:327px){
+   .inputBox_textarea {
+      position: relative;
+      width: 17rem;
+   }
+   .inputBox{
+      width: 17rem;
    }
 }

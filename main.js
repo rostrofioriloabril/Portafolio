@@ -1,4 +1,4 @@
-let label1 = document.querySelector('.inputBox__span1');
+let label1 = document.querySelector('.inputBox__span');
 let label2 = document.querySelector('.inputBox__span2');
 let label3 = document.querySelector('.inputBox__span3');
 let label4 = document.querySelector('.inputBox__span4');
@@ -9,10 +9,56 @@ let input2 = document.querySelector('.inputBox_child2');
 let input3 = document.querySelector('.inputBox_child3');
 let input4 = document.querySelector('.inputBox_child4');
 
+// function verificarcion(input,label){
+//     input.addEventListener('blur', function(){
+//         if (input.value != '' ){
+//             label.style.top='-0.4rem';
+//             label.style.fontSize='0.65rem';
+//             label.style.left='0.5rem';
+//             label.style.width='auto';
+//             label.style.opacity='1';
+//             label.style.background='#000';
+//             label.style.borderRadius='2px';
+//             label.style.letterSpacing='0.2rem';
+    
+//         }else{
+//             console.log('vacio');
+//         }
+//     input.addEventListener('click', function(){
+//         label.style.fontSize='0.65rem';
+//         label.style.opacity='1';
+//         label.style.padding='0 10px';
+//         label.style.background='#000';
+//         label.style.borderRadius='2px';
+//         label.style.textTransform='translateX(7px) translateY(1px);';
+//         label.style.letterSpacing='0.2rem';
+//     })
+//     })
+// }
 
-input1.addEventListener('click', function(){
-    label1.style.width='100%'
-})
+// verificarcion(input1,label1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,12 +1,15 @@
 
 .experiencia {
-    width: 100%;
     padding-top: 2rem;
+    margin: 0 1rem;
+    width: calc(100% - 2rem);
 }
 .experiencia .titulo {
     text-align: center;
     margin-bottom: 3rem;
-    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: calc(100% - 2rem);
     font-size: 1.8rem;
     text-shadow: 1px 1px 2px #000,
                 0px 0px 33px #fff;
@@ -37,7 +40,6 @@ button{
     font-weight: 600;
 }
 .imagen1 {
-    margin-left: 1em;
     width: 30%;
     height: 100%;
     
@@ -48,7 +50,6 @@ button{
 
 }
 .video1 {
-    margin-right: 1em;
     width: 25%;
     height: 100%;
     
@@ -60,13 +61,11 @@ button{
     
 }
 .textProject1{
-    margin: 0em 1em;
     text-align: justify;
     width: 35%;
     color: #fff;
 }
 .textProject1 h2{
-    margin-bottom: 0.5em;
     background: linear-gradient(to top, rgb(0, 0, 0) -45%, #e7a541) ;
     -webkit-background-clip: text;
     color: transparent;
@@ -92,8 +91,6 @@ button{
     display: none;
 }
 .imagen2{
-    margin-left: 1em;
-    margin-right: 1em;
     width: 50%;
     height: 80%;
 }
@@ -105,7 +102,6 @@ button{
 
 .textProject2 {
     color: #fff;
-    margin: 0em 1em;
     text-align: justify;
     width: 45%;
 }
@@ -132,8 +128,6 @@ button{
     border-radius: 10px;
 }
 .imagen3 {
-    margin-right: 1em;
-    margin-left: 1em;
     width: 50%;
     height: 100%;
 }
@@ -146,7 +140,6 @@ button{
 }
 
 .textProject3{
-    margin: 0em 1em;
     text-align: center;
     width: 45%;
     color: #fff;
@@ -165,15 +158,12 @@ button{
 }
 
 .imagen4 {
-    margin-left: 1em;
-    margin-right: 1em;
     width: 50%;
     height: 100%;
 }
 .textProject4{
-    margin: 0em 1em;
     text-align: justify;
-    width: 50%;
+    width: 45%;
     color: #fff;
 }
 .textProject4 h2{
@@ -183,7 +173,6 @@ button{
     margin-bottom: 0.5em;
 }
 .response{
-    margin-left: 1em;
     width: 60%;
     height: auto;
     display: none;
@@ -213,7 +202,6 @@ button{
 }
 
 .imagen5 {
-    margin-left: 1em;
     width: 60%;
     height: auto;
 }
@@ -225,7 +213,6 @@ button{
 }
 
 .textProject5{
-   margin: 0em 1em;
    text-align: center;
    width: 35%;
    color: #fff;
@@ -238,7 +225,7 @@ button{
 }
 .line{
     display: flex;
-    margin-top: 3rem;
+    margin: 1rem 0;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -262,14 +249,266 @@ button{
     }
  }
 
-@media only screen and (max-width: 620px){
-    .experiencia{
-       padding-top: 0;
+.uno, .dos, .tres, .cuatro , .cinco{
+    display: flex;
+    justify-content: space-around;
+}
+/* 
+ @media only screen and (min-width:846px) and (max-width: 900px){
+}
+    .textProject2 {
+        color: #fff;
+        margin: 0em 1em;
+        text-align: justify;
+        width: 45%;
+    }
+    .imagen2 img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .imagen2{
+        width: 55%;
+    }
+    .textProject2 h2 {
+        background: linear-gradient(45deg,#a00fbd 20%, #0a0361 78%, #a00fbd 34%);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    .tres, .cuatro {
+        margin-top: 3em;
+    }
+    .imagen4 img {
+        object-fit: fill;
+    }
+}
+@media only screen and (min-width:824px) and (max-width: 845px){
+    .imagen2 img {
+        object-fit: cover;
+    }
+    
+} */
+@media only screen and (min-width: 710px) and (max-width: 900px){
+    .uno{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .video1 {
+        display: none;
+    }
+    .imagen1 img {
+        width: 100%;
+        height: 100%;
+    }
+    .textProject1 {
+        text-align: center;
+        width: 38%;
+        margin-right: 3rem;
+        color: #fff;
+    }
+    .textProject2{
+        width: 38%;
+    }
+    .textProject2 h2 {
+        background: linear-gradient(45deg,#a00fbd 20%, #0a0361 112%, #a00fbd 34%);
+        -webkit-background-clip: text;
+        color: transparent;
+        margin-bottom: 0.5em;
+    }
+    .imagen2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .dos, .tres, .cuatro, .cinco{
+        height: 350px;
+        margin: 0;
+    }
+    .textProject3{
+        width: 38%;
+    }
+    .imagen3 img {
+        object-fit: contain;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        /* max-height: 100%; */
+        border-radius: 5%;
+    }
+    .imagen4 {
+        width: 50%;
+        height: 75%;
+    }
+}
+@media only screen and (min-width:621px) and (max-width:710px){
+    .line2 {
+        display: flex;
+        margin: 2rem 0rem;
     }
     .uno, .dos,.tres,.cuatro,.cinco{
-        margin-left: 1rem;
-        margin-right: 1rem;
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .imagen1 img{
+        width: 90%;
+        height: 100%;
+    }
+    .experiencia .titulo{
+        margin-bottom: 1.5rem;
+    }
+
+    .textProject1{
+        width: 100%;
+        text-align: center;
+    }
+    .textProject1{
+        margin: 1rem 0rem;
+    }
+    .imagen1{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .video1 {
+        display: none;
+    }
+    .imagen2{
+        display: none;
+    }
+    .response_dos{
+        display: block;
+        width: 100%;
+    }
+    .response_dos img {
+        width: 100%;
+    }
+    .textProject2 {
+        width: 85%;
+        text-align: center;
+    }
+    .textProject2 h2 {
+        background: linear-gradient(45deg,#a00fbd 20%, #0a0361 86%, #a00fbd 34%);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    .imagen3{
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .textProject3{
+        width: 85%;
+    }
+    .textProject3 h2{
+        margin-top: 0.5rem;
+    }
+    .cuatro{
+        margin-top: 2.5rem;
+    }
+    .imagen4{
+        width: 100%;
+    }
+    .imagen4 img{
+        display: none;
+    }
+    .response{
+        display: block;
+        width: 100%;
+    }
+    .response img {
+        width: 100%;
+        height: 100%;
+        border-radius: 2px;
+    }
+    .textProject4{
+        width: 100%;
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+    .cinco{
+        margin-top: 0rem;
+    }
+    .line {
+        margin: 1.5rem 0rem 0.5rem;
+    }
+    .cinco{
+        margin-top: 2rem;
+    }
+    .cinco .imagen5{
+        width: 90%;
+    }
+    .textProject5 {
+        width: calc(100% - 2em);
+        margin-top: 0.5rem;
+    }
+    .line2{
+        display: flex;
+        margin-top: 3rem;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .line{
+        margin-bottom: 0.5rem;
+    }
+    .imagen3, .imagen1{
+        display: none;
+    }
+    .experiencia {
+        padding-top: 0;
+        margin: 0 1rem;
         width: calc(100% - 2rem);
+    }
+    .uno, .dos, .tres, .cuatro, .cinco {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 620px){
+    .line2 {
+        display: flex;
+        margin: 2rem 0rem;
+    }
+    .uno, .dos,.tres,.cuatro,.cinco{
+        width: 100%;
         flex-direction: column;
         height: auto;
         align-items: center;
@@ -353,9 +592,8 @@ button{
     .cinco{
         margin-top: 0rem;
     }
-    .line{
-        margin-top: 2rem;
-        margin-bottom: 1.5rem;
+    .line {
+        margin: 1.5rem 0rem 0.5rem;
     }
     .cinco{
         margin-top: 2rem;
@@ -376,5 +614,17 @@ button{
     }
     .line{
         margin-bottom: 0.5rem;
+    }
+    .imagen3, .imagen1{
+        display: none;
+    }
+    .experiencia {
+        padding-top: 0;
+        margin: 0 1rem;
+        width: calc(100% - 2rem);
+    }
+    .uno, .dos, .tres, .cuatro, .cinco {
+        margin: 0;
+        width: 100%;
     }
 }

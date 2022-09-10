@@ -99,12 +99,12 @@ header{
 }
 .redes a {
     font-size: 20px;
-    margin-right: 1em;
+ 
     color: #fff;
 }
 .redes i {
     font-size: 18px;
-    margin-left: 0.1em;
+    margin: 0 1rem 0 0.5rem;
 }
 .sobreMi {
     width: 100%;
@@ -114,32 +114,42 @@ header{
     justify-items: center;
     align-items: center;
     text-align: justify;
+    flex-direction: row;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    align-content: center;
 }
-.sobreMi h2 {
+.text__titulo{
+    width: 100%;
+    height: 50px;
+}
+.text__titulo h2 {
     background: linear-gradient(#ff2d75, rgba(255, 0, 0, 0.781)) ;
     -webkit-background-clip: text;
     color: transparent;
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: -1em;
     font-size: 1.8rem;
+    
 }
 .sobreMi .text {
     width: 70%;
-    margin: 0% 2%;
-    margin-top: -2rem;
-    margin-left: 3rem;
+    margin-top: 0;
 }
 .imagen {
-    width: 20%;
-    height: 200px;
+    width: auto;
+    max-width: 215px;
+    height: 75%;
     overflow: hidden;
+    /* background: url('imagenes/perfilportfolio.jpg') no-repeat;
+    background-size: 100%; */
+
 }
 .imagen img {
-    object-fit: contain;
-    height:100%;
+    object-fit: fill;
+    height:97%;
     width: 100%;
-    border-radius: 50%;
+    border-radius: 60px;
     box-sizing: border-box;
     background-color: transparent;
 }
@@ -165,7 +175,7 @@ header{
     padding: 40px 0;
     padding-top: 0;
     margin-top: 0;
-    width: 1000px;
+    width: 100%;
 }
 .timeline:before{
     content: '';
@@ -266,10 +276,323 @@ li h4{
 .redes2{
     display: none;
 }
-@media only screen and (max-width: 620px){
+/* 
+@media only screen and (min-width:824px) and (max-width: 845px){
+    .texto h1 {
+        font-size: 170px;
+    }
+    .texto p {
+        margin-top: 1em;
+        width: 88%;
+        font-size: 1.5rem;
+    }
+    .sobreMi{
+        justify-content: space-evenly;
+        }
+        .sobreMi h2 {
+            margin-bottom: 0.5rem;
+        }
+        .sobreMi .text {
+            width: 70%;
+            margin: 0;
+        }
+        .imagen{
+            margin-left: 0;
+            width: 20%;    
+        }
+        .imagen img{
+        object-fit: fill;
+        height: 97%;
+        width: 100%;
+        }
+        
+
+@media only screen and (min-width:850px) and (max-width: 900px){
+    .sobreMi {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        color: #fff;
+        justify-items: center;
+        align-items: center;
+        text-align: justify;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .sobreMi h2 {
+        width: 100%;
+        margin-bottom: 0.2rem;
+    }
+    .sobreMi .text {
+        width: 70%;
+        margin: 0;
+    }
+    .imagen{
+        margin-left: 0;
+        width: 20%;    
+    }
+    .imagen img{
+        object-fit: fill;
+        height: 97%;
+        width: 100%;
+    }
+} */
+
+
+
+@media only screen and (min-width:1071px){
+    .texto {
+        display: flex;
+        margin-top: 4em;
+        margin-left: 4em;
+        width: auto;
+        color: #fff;
+        height: calc(100vh - 4rem - 50px);
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .sobreMi{
+        margin-top: 2rem;
+        height: auto;
+        padding: 2rem 2rem;
+    }
+    .sobreMi .text {
+        width: 50%;
+        margin-top: -3rem;
+    }
+    .text__titulo{
+        margin-bottom: 0rem;
+    }
+    .text__titulo h2 {
+        padding-left: 11%;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width:841px) and (max-width:1070px){
+
+    .texto {
+        display: flex;
+        margin-top: 4em;
+        margin-left: 4em;
+        width: auto;
+        color: #fff;
+        height: calc(100vh - 4rem - 50px);
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .sobreMi{
+        margin-top: 2rem;
+        height: auto;
+        padding: 2rem 0 2rem 0;
+    }
+    .sobreMi .text {
+        width: 50%;
+        margin-top: 0;
+    }
+    .text__titulo{
+        margin-bottom: 0.5rem;
+    }
+    .text__titulo h2 {
+        padding-left: 9%;
+        text-align: left;
+    }
+    
+}
+
+
+
+
+@media only screen and (min-width:711px) and (max-width:840px){
+    .texto {
+        display: flex;
+        margin-top: 4em;
+        margin-left: 4em;
+        width: auto;
+        color: #fff;
+        height: calc(100vh - 4rem - 50px);
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .sobreMi{
+        margin-top: 2rem;
+        height: auto;
+        padding: 2rem 0 2rem 0;
+    }
+    .sobreMi .text {
+        width: 50%;
+        margin-top: 0;
+    }
+    .text__titulo{
+        margin-bottom: 0.5rem;
+    }
+    .text__titulo h2 {
+        padding-left: 8%;
+        text-align: left;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:621px) and (max-width:710px){
+    .texto {
+        display: flex;
+        margin-top: 4em;
+        margin-left: 4em;
+        width: auto;
+        color: #fff;
+        height: calc(100vh - 4rem - 50px);
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .sobreMi{
+        margin-top: 2rem;
+        height: auto;
+        padding: 2rem 0 2rem 0;
+    }
+    .sobreMi .text {
+        width: 50%;
+        margin-top: 0;
+    }
+    .text__titulo{
+        margin-bottom: 0.5rem;
+    }
+    .text__titulo h2 {
+        padding-left: 6%;
+        text-align: left;
+    }
+}
+@media only screen and (min-width:506px)and (max-width: 620px){
     .navegacion{
         display: none;
     }
+    .texto {
+        margin: 0;
+        margin-top: 4em;
+        /* margin-left: 2em; */
+    }
+    .textos {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .textos a {
+        margin-right: 1rem;
+        color: #fff;
+        font-size: 0.9rem;
+    }
+    .presentacion {
+        display: flex;
+        padding: 0 1rem;
+        align-content: space-between;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0;
+        overflow: hidden;
+        height: 100vh;
+    }
+    .presentacion .texto {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100vh;
+    }
+    .texto h1 {
+        font-size: 150px;
+        font-family: monospace;
+        white-space: nowrap;
+        border-right: 4px solid;
+        width: 497px;
+        margin-left: 2rem;
+        animation: typing 3s infinite steps(12) alternate;
+        overflow: hidden;
+    }
+    .texto p {
+        margin-top: 1em;
+        width: 80%;
+        font-size: 1.5rem;
+        white-space: wrap;
+    }
+    .derecha{
+        margin-top: 1em;
+        margin-left: 2rem;
+        width: 90%;
+        font-size: 1.5rem;
+    }
+    .texto p {
+        /* margin-top: 1em; */
+        margin: 0;
+        width: 100%;
+    }
+    .redes {
+        display: flex;
+        width: 100%;
+        margin-top: 2em;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .sobreMi{
+        height: auto;
+        margin: 0 1rem 3rem;
+        width: calc(100% - 2rem);
+        display: flex;
+        justify-content: center;
+    }
+    .sobreMi .text {
+        width: 100%;
+        margin: 0;
+        height: auto;
+    }
+    .text__titulo {
+        background: linear-gradient(#ff2d75, rgba(255, 0, 0, 0.781));
+        -webkit-background-clip: text;
+        color: transparent;
+        text-align: center;
+        /* margin-bottom: -1em; */
+        font-size: 1.8rem;
+        height: 50px;
+    }
+    .imagen{
+        display: none;
+    }
+    .imagenresponsive{
+        margin-bottom: 1.5rem;
+        display: flex;
+        height: 200px;
+        width: 100%;
+        justify-content: center;
+    }
+    .img_responsive {
+        object-fit: fill;
+        height: 100%;
+        /* width: 100%; */
+        border-radius: 20%;
+        box-sizing: border-box;
+        background-color: transparent;
+    }
+}
+
+@media only screen and (min-width:441px)and (max-width: 505px){
+    
+    .navegacion{
+        display: none;
+    }
+    
     .textos{
         display: none;
     }
@@ -286,31 +609,49 @@ li h4{
     .timeline{
         width: 100%;
     }
+    .timeline ul li {
+        list-style: none;
+        width: 50%;
+        position: relative;
+        padding: 15px 30px;
+        box-sizing: border-box;
+    }
     .sobreMi{
         height: auto;
-        margin: 0 1rem 4rem;
+        margin: 0 1rem 3rem;
         width: calc(100% - 2rem);
         display: flex;
         justify-content: center;
     }
     .sobreMi .text {
-        width: 90%;
+        width: 100%;
         margin: 0;
+        height: auto;
+    }
+    .text__titulo {
+        background: linear-gradient(#ff2d75, rgba(255, 0, 0, 0.781));
+        -webkit-background-clip: text;
+        color: transparent;
+        text-align: center;
+        /* margin-bottom: -1em; */
+        font-size: 1.8rem;
+        height: 50px;
     }
     .imagen{
         display: none;
     }
     .imagenresponsive{
-        margin-bottom: 3.2rem;
-        display: block;
+        margin-bottom: 1.5rem;
+        display: flex;
         height: 200px;
-        width: 75%;
-    }
-    .img_responsive{
-        object-fit: contain;
-        height:100%;
         width: 100%;
-        border-radius: 50%;
+        justify-content: center;
+    }
+    .img_responsive {
+        object-fit: fill;
+        height: 100%;
+        /* width: 100%; */
+        border-radius: 20%;
         box-sizing: border-box;
         background-color: transparent;
     }
@@ -366,4 +707,125 @@ li h4{
     }
     .texto h1{
         text-align: center;
-    }} 
+    }
+}
+
+/*-------------------------------------------------*/
+@media only screen and (max-width: 440px){
+    .navegacion{
+        display: none;
+    }
+    .textos{
+        display: none;
+    }
+    .texto h1{
+        font-size: 5.2rem;
+        padding-top: 2rem;
+        font-family: monospace;
+        white-space: nowrap;
+        margin: 0;
+        border: none;
+        width: 100%;
+        animation: none;
+    }
+    .timeline{
+        width: 100%;
+    }
+    .timeline ul li {
+        list-style: none;
+        width: 50%;
+        position: relative;
+        padding: 15px 15px;
+        box-sizing: border-box;
+    }
+    .sobreMi{
+        height: auto;
+        margin: 0 1rem 3rem;
+        width: calc(100% - 2rem);
+        display: flex;
+        justify-content: center;
+    }
+    .sobreMi .text {
+        width: 100%;
+        margin: 0;
+        height: auto;
+    }
+    .text__titulo {
+        
+        text-align: center;
+        /* margin-bottom: -1em; */
+        font-size: 1.8rem;
+        height: 50px;
+    }
+    .imagen{
+        display: none;
+    }
+    .imagenresponsive{
+        margin-bottom: 1.5rem;
+        display: flex;
+        height: 200px;
+        width: 100%;
+        justify-content: center;
+    }
+    .img_responsive {
+        object-fit: fill;
+        height: 100%;
+        /* width: 100%; */
+        border-radius: 20%;
+        box-sizing: border-box;
+        background-color: transparent;
+    }
+    .formacion{
+        margin-top: 2rem;
+    }
+    .presentacion{
+        display: flex;
+        padding: 0 1rem;
+        align-content: space-between;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0;
+        overflow: hidden;
+        height: 100vh;
+    }
+    .presentacion .texto{
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .texto p{
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .derecha{
+        display: none;
+    }
+    .derecharesponsive{
+        display: flex;
+        align-items: flex-end;
+    
+    }
+    .redes{
+        display: none;
+    }
+    .redes2{
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+    .redes2 i {
+        color: #fff;
+        margin: 0;
+        font-size: 1.7rem;
+    }
+    .texto h1{
+        text-align: center;
+    }
+}
